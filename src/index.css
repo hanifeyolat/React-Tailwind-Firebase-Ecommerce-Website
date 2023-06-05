@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700;800&display=swap');
+
+
+.hide-scrollbar {
+    overflow: hidden;
+}
+
+.hide-scrolling {
+    position: fixed;
+    overflow-y: hidden;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    width: 0;
+    background-color: transparent;
+    display: none;
+}
+
+.active{
+    @apply border-r-orange border-r-4 rounded-r-md rounded-t-none
+}
+.order-placed, .shipped , .processing {
+    @apply font-bold text-turuncu
+}
+.delivered {
+    @apply font-bold text-success text-lg
+}
+.link{
+    @apply ease-in duration-300
+}
+.link.admin-button:hover{
+    @apply !text-white hover:bg-opacity-75
+}
+.link:hover{
+    @apply text-turuncu 
+}
+.link:hover .badge {
+    @apply !text-white
+}
+.react-star-rate{
+    @apply !-my-4
+}
